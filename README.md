@@ -1,4 +1,4 @@
-# Go + Next.js ECサイト (ポートフォリオ)
+# Go + Next.js ECサイト
 
 ## 概要
 
@@ -69,8 +69,9 @@ Go言語によるAPIと、Next.jsによるフロントエンドで構成され�
 
     **バックエンド:**
     ```bash
-    cp ec-site-backend/.env.example ec-site-backend/.env
-    # ec-site-backend/.env を必要に応じて編集（.env.exampleを参考に作成）
+    cd ec-site-backend
+    # ec-site-backend/.env.example を編集
+    （名前を「.env」に変更する、パスワードを変更するなど）
     ```
 
 3.  **アプリケーションの起動**
