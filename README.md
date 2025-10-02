@@ -9,7 +9,7 @@ Go言語によるAPIと、Next.jsによるフロントエンドで構成され�
     <b>図1: 商品一覧画面</b>
    <br><br>
 <img width="1000"  alt="商品管理画面" src="https://github.com/user-attachments/assets/d9ad3ee6-ac3d-4f8f-85df-0dd5818d1765" />
-   <b>図1: 商品管理画面</b>
+   <b>図2: 商品管理画面</b>
     <br><br>
 </p>
 
