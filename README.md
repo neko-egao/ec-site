@@ -1,8 +1,17 @@
 # Go + Next.js ECサイト
 
 ## 概要
-
 Go言語によるAPIと、Next.jsによるフロントエンドで構成された、ECサイトをイメージして作成したアプリケーションです。
+<br>
+具体的には、以下の画像のように「商品一覧画面」で商品を見ることができ、「商品管理画面」商品の追加・編集・削除が可能です。
+<p align="center">
+<img width="1000"  alt="商品一覧画面" src="https://github.com/user-attachments/assets/d76f5dba-fe80-4c53-b712-9c378a7ef68f" />
+    <b>図1: 商品一覧画面</b>
+   <br><br>
+<img width="1000"  alt="商品管理画面" src="https://github.com/user-attachments/assets/d9ad3ee6-ac3d-4f8f-85df-0dd5818d1765" />
+   <b>図1: 商品管理画面</b>
+    <br><br>
+</p>
 
 ## 主な機能
 
