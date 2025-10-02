@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: ec_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/mysql
+
+  api:
+    build: .
+    container_name: ec_api
+    restart: on-failure  # ★★★ もし失敗したら再起動する設定を追加 ★★★
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    depends_on:
+      - db # dbが起動するのを待つ（シンプルな設定に戻す）
+
+volumes:
+  db-data:
